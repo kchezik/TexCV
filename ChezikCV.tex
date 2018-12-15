@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{verbose, letterpaper, tmargin = 2.54cm, bmargin = 2.54cm,
+	lmargin = 2.64cm, rmargin = 2.64cm}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{setspace}
+\usepackage{enumitem}
+\setlist[description]{font=\normalfont\small,leftmargin=42pt,style=nextline}
+\usepackage{titlesec}
+\usepackage{url}
+\urlstyle{rm}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{datetime}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\newdateformat{headerdate}{\monthname[\THEMONTH] \THEYEAR}
+\lhead{Kyle A. Chezik, \headerdate\today}
+\rhead{\thepage}
+%\renewcommand{headrulewidth}{0mm}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{4pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}
+	{\bf\Large}{\thesection}{0pt}{}
+\titlespacing{\section}{0pt}{8pt}{3pt}
+
+\titleformat{\subsection}
+	{\bf\large}{\thesubsection}{0pt}{}
+\titlespacing{\subsection}{0pt}{8pt}{1.5pt}
+
+\setlength{\parindent}{0pt}
+\geometry{letterpaper}
+\textheight 21.75cm
+\setcounter{secnumdepth}{0}
+
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\begin{spacing}{1}
+\thispagestyle{empty}
+
+\begin{center}
+{\Large \textbf{Kyle A. Chezik}}\\
+\vspace{1.5mm}
+{\large \textit{Cirriculum Vitae}}\\
+
+\vspace{4.0mm}
+
+\begin{tabular}{ c c c }
+	\multicolumn{3}{c}{115 33\textsuperscript{rd} Ave. E., Seattle, Washington, USA, 98112} \\
+	kchezik.github.io & (206) 832-5883 & kchezik@gmail.com \\
+\end{tabular}
+\end{center}
+
+\hrule
+
+\input{cv-body.tex}
+
+\end{spacing}
+\end{document}
+
